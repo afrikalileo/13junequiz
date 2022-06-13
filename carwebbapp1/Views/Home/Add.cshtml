@@ -1,0 +1,28 @@
+﻿@model carwebbapp1.Models.Car
+
+    <form action ="/Home/Add" method="post">
+        <div>
+             @Html.LabelFor(x => x.Id)
+             @Html.TextBoxFor(x => x.Id)
+        </div>
+       <div>
+           @Html.LabelFor(x => x.Name)
+           @Html.TextBoxFor(x => x.Name)
+       </div>
+        <div>
+           @Html.LabelFor(x => x.Type)
+           @Html.TextBoxFor(x => x.Type)
+       </div>
+        <div>
+           @Html.LabelFor(x => x.Price)
+           @Html.TextBoxFor(x => x.Price)
+       </div>
+
+       <div>
+           <input type="submit" name="Add"/>
+
+       </div>
+
+
+
+    </form>

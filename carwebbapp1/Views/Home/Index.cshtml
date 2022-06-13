@@ -1,0 +1,27 @@
+﻿@using carwebbapp1.Models;
+@model List<Car>;
+
+
+<table>
+    <tr>
+    <th>ID</th>
+    <th> Name </th>
+    <th> Type</th>
+    <th> Price</th>
+    </tr>
+
+    
+    @foreach (var item in Model)
+    {
+
+        <tr>
+            <td> @item.Id </td>
+            <td> @item.Name </td>
+            <td> @item.Type </td>
+            <td> @item.Price </td>
+          
+        </tr>
+
+    }
+
+</table>
